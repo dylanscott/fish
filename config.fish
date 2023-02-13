@@ -16,6 +16,8 @@ if status is-interactive
     abbr --add grs git reset
 end
 
+set --global fish_greeting
+
 # tide prompt
 set --global tide_left_prompt_items pwd newline character
 set --global tide_right_prompt_items cmd_duration status git
