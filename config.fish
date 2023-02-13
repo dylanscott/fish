@@ -1,7 +1,8 @@
 fish_add_path --global /opt/homebrew/bin ~/.local/bin ~/.cargo/bin ~/.jenv/bin
 
-set -x TERM xterm-256color
-set -x HOMEBREW_NO_AUTO_UPDATE 1
+set --export TERM xterm-256color
+set --export EDITOR vim
+set --export HOMEBREW_NO_AUTO_UPDATE 1
 
 if status is-interactive
     scmpuff init -s --shell=fish --aliases=false | source
