@@ -37,3 +37,8 @@ set --global tide_git_color_branch magenta
 set --global tide_git_color_upstream blue
 set --global tide_git_color_staged green
 set --global tide_git_color_untracked brblack
+
+# fzf
+fzf_configure_bindings --history=\cr --directory=\cff --git_log=\cfl --variables= --processes= --git_status=
+set --global fzf_directory_opts --bind "ctrl-e:execute($EDITOR {} &> /dev/tty)"
+set --global fzf_history_opts --with-nth=4..
